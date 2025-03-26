@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Capital | We Buy Houses in Any Condition</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.02);
+        }
+        .glow-text {
+            text-shadow: 0 0 15px rgba(66, 153, 225, 0.5);
+        }
+    </style>
+</head>
+<body class="gradient-bg text-gray-100">
+    <!-- Navigation -->
+    <nav class="container mx-auto px-6 py-6">
+        <div class="flex items-center justify-between">
+            <div class="text-2xl font-bold text-blue-400 glow-text">QR CAPITAL</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#offer" class="hover:text-blue-400 transition">Get Offer</a>
+                <a href="#benefits" class="hover:text-blue-400 transition">Benefits</a>
+                <a href="#process" class="hover:text-blue-400 transition">Process</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto px-6 py-24">
+        <div class="max-w-4xl fade-in">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                We Buy Houses in Any Condition<br>
+                <span class="text-blue-400 glow-text">Cash in Hand Within Two Weeks</span>
+            </h1>
+            <p class="text-xl mb-8 text-gray-300">
+                No Fees • No Repairs • No Stress
+            </p>
+            <button class="bg-blue-500 hover:bg-blue-600 px-8 py-4 rounded-lg text-xl font-semibold transition-all 
+                       transform hover:scale-105 shadow-xl">
+                Get Instant Offer →
+            </button>
+        </div>
+    </section>
+
+    <!-- Benefits Grid -->
+    <section id="benefits" class="container mx-auto px-6 py-20">
+        <div class="grid md:grid-cols-3 gap-12">
+            <div class="bg-white/10 p-8 rounded-xl hover-scale backdrop-blur-lg">
+                <i class="fas fa-hand-holding-usd text-4xl text-blue-400 mb-4"></i>
+                <h3 class="text-2xl font-bold mb-4">14-Day Closing</h3>
+                <p class="text-gray-300">Fast, reliable process with guaranteed funding</p>
+            </div>
+            <div class="bg-white/10 p-8 rounded-xl hover-scale backdrop-blur-lg">
+                <i class="fas fa-home text-4xl text-blue-400 mb-4"></i>
+                <h3 class="text-2xl font-bold mb-4">As-Is Purchase</h3>
+                <p class="text-gray-300">We buy damaged, inherited, and hoarded homes</p>
+            </div>
+            <div class="bg-white/10 p-8 rounded-xl hover-scale backdrop-blur-lg">
+                <i class="fas fa-coins text-4xl text-blue-400 mb-4"></i>
+                <h3 class="text-2xl font-bold mb-4">Zero Fees</h3>
+                <p class="text-gray-300">No commissions or hidden charges</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="bg-blue-500/10 py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-8">Simple 3-Step Process</h2>
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="fade-in">
+                    <div class="text-4xl text-blue-400 mb-4">1</div>
+                    <h3 class="text-xl font-semibold mb-2">Share Property Details</h3>
+                    <p class="text-gray-300">60-second online form</p>
+                </div>
+                <div class="fade-in">
+                    <div class="text-4xl text-blue-400 mb-4">2</div>
+                    <h3 class="text-xl font-semibold mb-2">Receive Cash Offer</h3>
+                    <p class="text-gray-300">Within 24 hours</p>
+                </div>
+                <div class="fade-in">
+                    <div class="text-4xl text-blue-400 mb-4">3</div>
+                    <h3 class="text-xl font-semibold mb-2">Close & Get Paid</h3>
+                    <p class="text-gray-300">Choose your closing date</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="container mx-auto px-6 py-20">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">Why Choose QR Capital?</h2>
+            <p class="text-gray-300 text-xl">
+                Local market experts with transparent pricing and flexible closing options
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/10 py-12">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <div class="mb-8 text-blue-400 glow-text">QR CAPITAL</div>
+            <div class="text-sm">
+                © 2023 All rights reserved | 
+                <a href="#" class="hover:text-blue-400">Privacy Policy</a> |
+                <a href="#" class="hover:text-blue-400">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating CTA -->
+    <div class="fixed bottom-6 right-6 animate-pulse">
+        <button class="bg-blue-500 text-white p-5 rounded-full shadow-2xl hover:bg-blue-600 transition
+                    transform hover:scale-110 flex items-center">
+            <i class="fas fa-phone text-2xl mr-3"></i>
+            <span class="font-semibold">Call Now</span>
+        </button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.fade-in').forEach((el) => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
